@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/mahmouds1/How-To-Adult#readme",
   "dependencies": {
-    "firebase": "^9.8.2"
+    "firebase": "^9.8.2",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
   }
 }

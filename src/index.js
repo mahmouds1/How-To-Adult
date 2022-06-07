@@ -7,19 +7,19 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCrknIUPr7hgnqpxJxmgYwdIJbjHNfppGs",
-  authDomain: "how-to-adult-a4e2d.firebaseapp.com",
-  databaseURL: "https://how-to-adult-a4e2d-default-rtdb.firebaseio.com",
-  projectId: "how-to-adult-a4e2d",
-  storageBucket: "how-to-adult-a4e2d.appspot.com",
-  messagingSenderId: "543048609168",
-  appId: "1:543048609168:web:f7b2178458c95ca9091715",
-  measurementId: "G-VVV9XLRCBG"
+    apiKey: "AIzaSyCoqz-t-v46hOeR0LgLCKgzfZlZEGZlbDM",
+    authDomain: "how-to-adultv2.firebaseapp.com",
+    projectId: "how-to-adultv2",
+    storageBucket: "how-to-adultv2.appspot.com",
+    messagingSenderId: "1024598055817",
+    appId: "1:1024598055817:web:45f1e1be15222787851f58",
+    measurementId: "G-80778E0ZDG"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
 
 /*dont need this auth code*/
 /**
