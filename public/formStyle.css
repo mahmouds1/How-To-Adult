@@ -28,8 +28,7 @@ li {
     float: left;
 }
 
-li a,
-.dropdownBtn {
+li a, .dropdownBtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -37,8 +36,7 @@ li a,
     text-decoration: none;
 }
 
-li a:hover,
-.dropdown:hover .dropdownBtn {
+li a:hover, .dropdown:hover .dropdownBtn {
     background-color: red;
 }
 
