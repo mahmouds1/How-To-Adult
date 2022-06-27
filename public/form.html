@@ -17,7 +17,7 @@
 
         <header>
             <a href="./index.html">
-                <h1>HOW TO ADULT</h1>
+                <h1 class='title_hta'>HOW TO ADULT</h1>
             </a>
         
             <nav id="topBar">
@@ -44,39 +44,58 @@
                 </ul>
             </nav>
         </header>
-
-        <div id ="resource">
+        
+        <!-- style= "position: relative; right: -500px" -->
+        <div id ="resource" style="margin-left:auto; margin-right:auto; width:400px">
             <form id="resourceFormInput">
-                <fieldset>
+                <fieldset >
 
                     <!-- inputs for the form -->
-                    <label>Email:</label>
-                    <input type="email" name="email" id="email"><br>
+                    <div style="display:block;">
+                        <label>Email:</label>
+                        <input style="float:right;" type="email" name="email" id="email"><br>
+                    </div>
 
-                    <label>Resource Title:</label>
-                    <input type="text" name="ReTitle" id="title"><br>
-
-                    <label>Author or Channel Name:</label>
-                    <input type="text" name="authorChannelName" id="authChName"><br>
-
-                    <label>Resource Link:</label>
-                    <input type="url" name="ReLink" id="link"><br>
-
-                    <label>Category:</label>
-                    <select name="category" id="cat">
-                        <option value="" selected disabled hidden>pick one!</option>
-                        <optgroup label="Home">
-                            <option>Repair</option>
-                            <option>Gadgets</option>
-                            <option>Cleaning</option>
-                        </optgroup>
-                        <optgroup label="Personal">
-                            <option>Personal Growth</option>
-                            <option>Appointments</option>
-                            <option>Cooking</option>
-                        </optgroup>
-                    </select>
                     <br>
+
+                    <div style="display:block;">
+                        <label>Resource Title:</label>
+                        <input style="float:right;" type="text" name="ReTitle" id="title"><br>
+                    </div>
+
+                    <br>
+
+                    <div style="display:block;">
+                        <label>Author or Channel Name:</label>
+                        <input style="float:right;" type="text" name="authorChannelName" id="authChName"><br>
+                    </div>  
+
+                    <br>
+
+                    <div style="display:block;">
+                        <label>Resource Link:</label>
+                        <input style="float:right;" type="url" name="ReLink" id="link"><br>
+                    </div>
+                    
+                    <br>
+
+                    <div style="display:block;">
+                        <label>Category:</label>
+                        <select style="float:right;"name="category" id="cat">
+                            <option value="" selected disabled hidden>Pick one!</option>
+                            <optgroup label="Home">
+                                <option>Repair</option>
+                                <option>Gadgets</option>
+                                <option>Cleaning</option>
+                            </optgroup>
+                            <optgroup label="Personal">
+                                <option>Personal Growth</option>
+                                <option>Appointments</option>
+                                <option>Cooking</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
                     <br>
 
                     <button id="addRe" class="btn waves-effect waves-light">Submit Resource</button>
@@ -85,22 +104,31 @@
             </form>
         </div>
             
-        
-        <div id ="suggestion">
+        <!-- style="position:relative; right: -1000px; top: -215.19px" -->
+        <div id ="suggestion" style="margin-left:auto; margin-right:auto; width:400px">
                     <form id="suggestionFormInput">
                         <fieldset>
 
                             <!-- inputs for the form -->
-                            <label>Email:</label>
-                            <input type="email" name="email" id="email"><br>
-
-                            <label>what resource type would you prefer?</label>
-                            <input type="radio" name="reType" value="video">Video
-                            <input type="radio" name="reType" value="article"> Article<br>
-
-                            <label>resurce question you want an answer for?</label>
-                            <input type="text" name="question" id="q">
+                            <div style="display:block;">
+                                <label>Email:</label>
+                                <input style="float:right;" type="email" name="email" id="email"><br>
+                            </div>
                             <br>
+
+                            <div style="display:block;">
+                                <label>what resource type would you prefer?</label>
+                                <input style="float:right;" type="radio" name="reType" value="video">Video
+                                <input style="float:right;" type="radio" name="reType" value="article"> Article<br>
+                            </div>
+
+                            <br>
+
+                            <div style="display:block;">
+                                <label>Resource question you want an answer for?</label>
+                                <input style="float:right;" type="text" name="question" id="q">
+                            </div>
+
                             <br>
 
                             <button id="addSugg" class="btn waves-effect waves-light">Submit Suggestion</button>
@@ -108,7 +136,6 @@
                         </fieldset>
                     </form>
                 </div>
-            
 
         <section id="dbCode">
             <script type="module">
