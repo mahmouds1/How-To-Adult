@@ -14,14 +14,6 @@ main {
     margin-left: 100px;
 }
 
-h1.Welcome_title {
-    color: black;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Times New Roman';
-
-}
-
 h1.title_hta {
     text-align: center;
     font-size: 70px;
@@ -35,7 +27,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: lightgray; */
     border-width: 2px;
     border: 5px solid white;
 }
@@ -57,7 +48,7 @@ li a, .dropdownBtn {
 }
 
 li a:hover, .dropdown:hover .dropdownBtn {
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.63);
 
 }
 
@@ -118,6 +109,7 @@ h1 {
     }
 }
 
+/* Drop-downs for nav bar */
 li.dropdown {
     display: inline-block;
 }
@@ -149,16 +141,20 @@ li.dropdown {
 }
 
 /*form properties*/
-div {
-    width: 400px;
+#suggestion #resources {
+    width: 500px;
     padding: 10px;
     display: center;
+    
 }
 
 form {
-    width: 400px;
-    border: solid 1px #333030;
+    width: 500px;
+    border: solid 1px black;
     padding: 10px;
+    background-color:  rgb(173, 216, 230);
+    
+    
 }
 
 button {
