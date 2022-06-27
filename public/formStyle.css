@@ -14,14 +14,6 @@ main {
     margin-left: 100px;
 }
 
-h1.Welcome_title {
-    color: black;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Times New Roman';
-
-}
-
 h1.title_hta {
     text-align: center;
     font-size: 70px;
@@ -153,12 +145,14 @@ li.dropdown {
     width: 500px;
     padding: 10px;
     display: center;
+    
 }
 
 form {
     width: 500px;
-    border: solid 1px #333030;
+    border: solid 1px black;
     padding: 10px;
+    background-color:  rgb(173, 216, 230);
     
     
 }
