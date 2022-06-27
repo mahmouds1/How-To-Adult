@@ -14,6 +14,7 @@ main {
     margin-left: 100px;
 }
 
+/* TODO: Make words look better by moving them away from edge of screen */
 p.information {
     font-size: 20px;
     /* transform: translate(-50%,-50%); */
@@ -52,8 +53,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-/* background-color: lightgray; */
     border-width: 2px;
     border: 5px solid white;
 }
@@ -72,8 +71,10 @@ li a, .dropdownBtn {
 }
 
 li a:hover, .dropdown:hover .dropdownBtn {
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.63);
 }
+
+/* Drop-downs for nav bar */
 
 li.dropdown {
     display: inline-block;
