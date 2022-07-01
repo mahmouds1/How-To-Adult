@@ -50,7 +50,7 @@
                     <!-- inputs for the form -->
                     <div style="display:block;">
                         <label>Email:</label>
-                        <input style="float:right;" type="email" name="email" id="email"><br>
+                        <input style="float:right;" type="email" name="email" id="emailA"><br>
                     </div>
 
                     <br>
@@ -87,8 +87,8 @@
                             </optgroup>
                             <optgroup label="Personal">
                                 <option>Personal Growth</option>
-                                <option>Appointments</option>
                                 <option>Cooking</option>
+                                <option>Travel</option>
                             </optgroup>
                         </select>
                     </div>
@@ -108,7 +108,7 @@
                             <!-- inputs for the form -->
                             <div style="display:block;">
                                 <label>Email:</label>
-                                <input style="float:right;" type="email" name="email" id="email"><br>
+                                <input style="float:right;" type="email" name="emailB" id="emailB"><br>
                             </div>
                             <br>
 
@@ -168,7 +168,7 @@
                     e.preventDefault();
                     //grabs the values in each field and assigns it to vars in DB
                     set(ref(db, 'resources/' + Math.random().toString(36).slice(2, 7)), {
-                        email: document.getElementById('email').value,
+                        email: document.getElementById('emailA').value,
                         resourceTitle: document.getElementById('title').value,
                         authorChannelName: document.getElementById('authChName').value,
                         resourceLink: document.getElementById('link').value,
@@ -189,7 +189,7 @@
 
                         //grabs the values in each field and assigns it to vars in DB
                         set(ref(db, 'suggestions/' + Math.random().toString(36).slice(2, 7)), {
-                            email: document.getElementById('email').value,
+                            email: document.getElementById('emailB').value,
                             resourceType: document.querySelector('input[name="reType"]:checked').value,
                             resourceQ: document.getElementById('q').value,
                         });
