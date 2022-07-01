@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Gadgets - How To Adult</title>
-    <link rel="stylesheet" href="./catHDesign.css?{% now 'U' %}">
+    <title>Personal Growth - How To Adult</title>
+    <link rel="stylesheet" href="./catPDesign.css?{% now 'U' %}">
 </head>
 
 <body>
+
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
@@ -28,15 +29,15 @@
                     <div class="wrapper">
                         <div class="dropdown-content">
                             <label>Home</label>
-                            <a href="./homeRepair.html">Repair</a>
-                            <a href="./homeCleaning.html">Cleaning</a>
-                            <a href="./homeGadgets.html">Gadgets</a>
+                            <a href="./../home-categories/homeRepair.html">Repair</a>
+                            <a href="./../home-categories/homeCleaning.html">Cleaning</a>
+                            <a href="./../home-categories/homeGadgets.html">Gadgets</a>
                         </div>
                         <div class="dropdown-content">
                             <label>Personal</label>
-                            <a href="./../personal-categories/personalGrowth.html">Growth</a>
-                            <a href="./../personal-categories/personalCooking.html">Cooking</a>
-                            <a href="./../personal-categories/personalTravel.html">Travel</a>
+                            <a href="./personalGrowth.html">Growth</a>
+                            <a href="./personalCooking.html">Cooking</a>
+                            <a href="./personalTravel.html">Travel</a>
                         </div>
                     </div>
                 </li>
@@ -45,7 +46,7 @@
     </header>
 
 
-    <h1>this is homeGadgets category</h1>
+    <h1>this is personalGrowth category</h1>
 
 
     <div class="grid-container">
@@ -145,7 +146,7 @@
 
             //db set-up
             const db = getDatabase(app);
-            var idCat = "h-g-";
+            var idCat = "p-g-";
             var idNum = 1, data;
 
             //loops through JSON tree within db to read data
