@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Forms - How To Adult</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <link rel="stylesheet" href="./formStyle.css?{% now 'U' %}">
     </head>
 
@@ -50,7 +51,7 @@
                     <!-- inputs for the form -->
                     <div style="display:block;">
                         <label>Email:</label>
-                        <input style="float:right;" type="email" name="email" id="email"><br>
+                        <input style="float:right;" type="email" name="email" id="emailA"><br>
                     </div>
 
                     <br>
@@ -87,8 +88,8 @@
                             </optgroup>
                             <optgroup label="Personal">
                                 <option>Personal Growth</option>
-                                <option>Appointments</option>
                                 <option>Cooking</option>
+                                <option>Travel</option>
                             </optgroup>
                         </select>
                     </div>
@@ -108,7 +109,7 @@
                             <!-- inputs for the form -->
                             <div style="display:block;">
                                 <label>Email:</label>
-                                <input style="float:right;" type="email" name="email" id="email"><br>
+                                <input style="float:right;" type="email" name="emailB" id="emailB"><br>
                             </div>
                             <br>
 
@@ -168,7 +169,7 @@
                     e.preventDefault();
                     //grabs the values in each field and assigns it to vars in DB
                     set(ref(db, 'resources/' + Math.random().toString(36).slice(2, 7)), {
-                        email: document.getElementById('email').value,
+                        email: document.getElementById('emailA').value,
                         resourceTitle: document.getElementById('title').value,
                         authorChannelName: document.getElementById('authChName').value,
                         resourceLink: document.getElementById('link').value,
@@ -176,7 +177,23 @@
                     });
 
                     //confirmation that form was submitted
-                    alert('you submitted a resource!');
+                    Swal.fire({
+                        title: '<h3 id="swal">Thank you for submitting a resource!</h3>',
+                        icon: 'success',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        width: 600,
+                        padding: '3em',
+                        color: '#716add',
+                        //background: '#fff url(./imgs/bamboo2.png)',
+                        /**backdrop: `
+                                    rgba(169,169,169,0.2)
+                                    url("./imgs/corgi-thumbs-up.gif")
+                                    top
+                                    no-repeat
+                                    `**/
+                    })
+
                     //resets form after one submission
                     document.getElementById('resourceFormInput').reset();
                 });
@@ -189,13 +206,29 @@
 
                         //grabs the values in each field and assigns it to vars in DB
                         set(ref(db, 'suggestions/' + Math.random().toString(36).slice(2, 7)), {
-                            email: document.getElementById('email').value,
+                            email: document.getElementById('emailB').value,
                             resourceType: document.querySelector('input[name="reType"]:checked').value,
                             resourceQ: document.getElementById('q').value,
                         });
 
                         //confirmation that form was submitted
-                        alert('you submitted a suggestion!');
+                        Swal.fire({
+                            title: '<h3 id="swal">Thank you for submitting a suggestion!</h3>',
+                            icon: 'success',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            width: 600,
+                            padding: '3em',
+                            color: '#716add',
+                            //background: '#fff url(./imgs/bamboo2.png)',
+                            /**backdrop: `
+                                        rgba(169,169,169,0.2)
+                                        url("./imgs/corgi-thumbs-up.gif")
+                                        top
+                                        no-repeat
+                                        `**/
+                        })
+                        
                         //resets form after one submission
                         document.getElementById('suggestionFormInput').reset();
                     });
