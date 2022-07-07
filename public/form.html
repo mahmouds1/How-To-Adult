@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Forms - How To Adult</title>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <link rel="stylesheet" href="./formStyle.css?{% now 'U' %}">
     </head>
 
@@ -176,7 +177,23 @@
                     });
 
                     //confirmation that form was submitted
-                    alert('you submitted a resource!');
+                    Swal.fire({
+                        title: '<h3 id="swal">Thank you for submitting a resource!</h3>',
+                        icon: 'success',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        width: 600,
+                        padding: '3em',
+                        color: '#716add',
+                        //background: '#fff url(./imgs/bamboo2.png)',
+                        /**backdrop: `
+                                    rgba(169,169,169,0.2)
+                                    url("./imgs/corgi-thumbs-up.gif")
+                                    top
+                                    no-repeat
+                                    `**/
+                    })
+
                     //resets form after one submission
                     document.getElementById('resourceFormInput').reset();
                 });
@@ -195,7 +212,23 @@
                         });
 
                         //confirmation that form was submitted
-                        alert('you submitted a suggestion!');
+                        Swal.fire({
+                            title: '<h3 id="swal">Thank you for submitting a suggestion!</h3>',
+                            icon: 'success',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            width: 600,
+                            padding: '3em',
+                            color: '#716add',
+                            //background: '#fff url(./imgs/bamboo2.png)',
+                            /**backdrop: `
+                                        rgba(169,169,169,0.2)
+                                        url("./imgs/corgi-thumbs-up.gif")
+                                        top
+                                        no-repeat
+                                        `**/
+                        })
+                        
                         //resets form after one submission
                         document.getElementById('suggestionFormInput').reset();
                     });
