@@ -17,6 +17,8 @@ main {
 /* TODO: Make words look better by moving them away from edge of screen */
 p.information {
     font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     /* transform: translate(-50%,-50%); */
     /* text-align:center; */
 }
