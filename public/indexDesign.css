@@ -14,36 +14,37 @@ main {
     margin-left: 100px;
 }
 
-/* TODO: Make words look better by moving them away from edge of screen */
 p.information {
     font-size: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    /* transform: translate(-50%,-50%); */
-    /* text-align:center; */
+    color: #4B3F72;
+    font-family: 'Quicksand';
 }
 
 h1.Welcome_title {
-    color: black;
+    color: #19647E;
     text-align: center;
     font-size: 50px;
-    font-family: 'Times New Roman';
+    font-family: 'Comfortaa';
 
 }
 
 h2.About_Us_title {
-    color: black;
+    color: #19647E;
     text-align: center;
     font-size: 50px;
-    font-family: 'Times New Roman';
+    font-family: 'Comfortaa';
 
 }
 
 h1.title_hta {
     text-align: center;
     font-size: 70px;
-    font-family: 'Times New Roman';
+    font-family: 'Comfortaa';
     text-decoration: none;
+    color: #19647E;
+    
 
 }
 
@@ -56,7 +57,7 @@ ul {
     padding: 0;
     overflow: hidden;
     border-width: 2px;
-    border: 5px solid white;
+    border: 5px solid black;
 }
 
 li {
@@ -69,11 +70,11 @@ li a, .dropdownBtn {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-right: 5px solid white;
+    border-right: 5px solid black;
 }
 
 li a:hover, .dropdown:hover .dropdownBtn {
-    background-color: rgba(255, 255, 255, 0.63);
+    background-color: #FFC857;
 }
 
 /* Drop-downs for nav bar */
@@ -100,7 +101,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1
+    background-color: #FFC857
 }
 
 .dropdown:hover .wrapper {
@@ -108,6 +109,9 @@ li.dropdown {
     justify-content: center;
 }
 
+/* body {
+    background-color: #8A8D91;
+} */
 
 /*background img*/
 html {
@@ -120,7 +124,7 @@ body {
 
 .bg {
     animation: slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    background-image: linear-gradient(-60deg, #8A8D91 50%, #E8F1FF 50%);
     bottom: 0;
     left: -50%;
     opacity: .5;
