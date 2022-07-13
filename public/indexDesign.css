@@ -74,7 +74,7 @@ li a, .dropdownBtn {
 }
 
 li a:hover, .dropdown:hover .dropdownBtn {
-    background-color: #FFC857;
+    background-color: #119DA4;
 }
 
 /* Drop-downs for nav bar */
@@ -101,7 +101,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #FFC857
+    background-color: #119DA4
 }
 
 .dropdown:hover .wrapper {
