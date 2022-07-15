@@ -18,6 +18,7 @@
         <header>
             <a href="./../index.html">
                 <h1 class='title_hta'>HOW TO ADULT</h1>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
             </a>
 
         <nav id="topBar">
@@ -45,7 +46,7 @@
     </header>
 
 
-    <h1>this is homeCleaning category</h1>
+    <h1 class="cat_title">Home Cleaning</h1>
 
 
     <div class="grid-container">
@@ -150,11 +151,11 @@
 
             //loops through JSON tree within db to read data
             for (let i = 1; i <= 9; i++) {
-
+                
                 //db references
-                const titleRef = ref(db, 'displyed-resources/titles/' + idCat + idNum);
-                const linkRef = ref(db, 'displyed-resources/links/' + idCat + idNum);
-                const authChRef = ref(db, 'displyed-resources/auth-channels/' + idCat + idNum);
+                const titleRef = ref(db, 'displyed-resources/title/' + idCat + idNum);
+                const linkRef = ref(db, 'displyed-resources/link/' + idCat + idNum);
+                const authChRef = ref(db, 'displyed-resources/auth-channel/' + idCat + idNum);
                 const viewRef = ref(db, 'displyed-resources/views/' + idCat + idNum);
 
                 //func grabs title/link
