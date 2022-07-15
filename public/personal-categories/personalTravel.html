@@ -165,7 +165,7 @@
                             console.log("link: ", snapshot2.val());
 
                             //print out link and title
-                            document.querySelector('#r' + i + '-titleLink').innerHTML = `<h4><a href="${snapshot2.val()}">${snapshot.val()}</a></h4>`;
+                            document.querySelector('#r' + i + '-titleLink').innerHTML = `<h4><a href="${snapshot2.val()}" target="_blank" rel="noopener noreferrer">${snapshot.val()}</a></h4>`;
                         });
 
                     });
