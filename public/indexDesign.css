@@ -1,3 +1,4 @@
+/* #region main*/
 * {
     padding: 10;
     margin: 10;
@@ -15,31 +16,6 @@ main {
     background-color: #1F2041;
 }
 
-p.information {
-    font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    color: #4B3F72;
-    font-family: 'Quicksand';
-}
-
-h1.Welcome_title {
-    color: #19647E;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Comfortaa';
-
-}
-
-h2.About_Us_title {
-    color: #19647E;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Comfortaa';
-    
-
-}
-
 
 h1.title_hta {
     text-align: center;
@@ -52,8 +28,9 @@ h1.title_hta {
     
 
 }
+/* #endregion main*/
 
-/*background img*/
+/* #region background img*/
 body {
     margin: 0;
 }
@@ -72,8 +49,9 @@ body {
     margin: 20px;
     padding: 1em;
 }
+/* #endregion background img*/
 
-/*nav bar properties*/
+/* #region nav bar properties*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -147,3 +125,30 @@ li.dropdown {
     display: flex;
     justify-content: center;
 }
+/* #endregion nav bar properties*/
+
+/* #region home content*/
+p.information {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #4B3F72;
+    font-family: 'Quicksand';
+}
+
+h1.Welcome_title {
+    color: #19647E;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+
+}
+
+h2.About_Us_title {
+    color: #19647E;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+}
+
+/* #endregion home content*/
