@@ -25,8 +25,13 @@ h1.title_hta {
     color: #19647E;
     float: left !important;
     margin: 10px;
+}
 
-
+h1.cat_title {
+    color: #19647E;
+    font-family: "Comfortaa";
+    text-align: center;
+    font-size: 50px;
 }
 
 /* #endregion main*/
@@ -92,7 +97,7 @@ li.dropdown {
 
 .navLabel {
     font-size: 30px;
-    font-family: 'Quicksand';
+    /*font-family: 'Quicksand';*/
     padding-left: 8px;
     padding-right: 3px;
     padding-bottom: 15px;
@@ -113,7 +118,7 @@ li.dropdown {
 
 .dropdown-content a {
     color: black;
-    font-family: 'Quicksand';
+    /*font-family: 'Quicksand';*/
     font-size: 20px;
     padding: 12px 16px;
     text-decoration: none;
