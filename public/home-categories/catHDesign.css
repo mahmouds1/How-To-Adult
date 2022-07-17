@@ -89,10 +89,14 @@ li.dropdown {
 
 
 /*resources grid layout*/
+/* been testing - border on grid item shows where the
+   actual border is (shit wack) even without it showing
+   same issue is occurring and cant shift anything around */
 
 .grid-container {
     display: grid;
-    gap: 0px;
+    gap: 10px;
+    /* margin: 10; */
     grid-template-columns: auto auto auto;
     /*background-color: #ceb0e6;*/
     align-content: space-evenly;
@@ -100,15 +104,16 @@ li.dropdown {
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
-    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* padding: 20px; */
     font-size: 30px;
     text-align: center;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-            width: 80%;
-            border-radius: 5px;
+    /* margin: 10; */
+    /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0); */
+    /* transition: 0.3s; */
+    /* width: 80%; */
+    /* border-radius: 5px; */
 }
 
 h4 {
@@ -117,11 +122,9 @@ h4 {
 }
 
 
-.grid-item:hover {
+/* .grid-item:hover {
     box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
-}
-
-
+} */
 
 /*background img*/
 html {
@@ -192,5 +195,87 @@ footer a:link,
 footer a:visited {
     color: #ec8295;
     text-decoration: none;
+
+}
+
+/* Card Interaction */
+
+/* body {
+    background-color:#f2f2f2;
+    font-family: 'RobotoDraft', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+} */
+
+/* For Image Part */
+* {
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+/* .center {
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* End Non-Essential  */
+
+.property-card {
+    height:18em;
+    width:14em;
+    /* display:-webkit-box;
+    display:-ms-flexbox; */
+    display:center;
+    /* -webkit-box-orient:vertical;
+    -webkit-box-direction:normal; */
+    /* -ms-flex-direction:column;
+    flex-direction:column; */
+    position:relative;
+    /* -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); */
+    /* -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); */
+    /* transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1); */
+    border-radius:16px;
+    overflow:hidden;
+    /* -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff; */
+    /* box-shadow:  15px 15px 27px #000000, -15px -15px 27px #ffffff; */
+}
+
+/* Top Half of card, image. */
+
+.property-image {
+    height:6em;
+    width:14em;
+    padding:1em 2em;
+    position:Absolute;
+    top:0px;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    /* background-color: #FFC857; */
+    background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description
+{
+    background-color: #FFC857;
+    height:12em;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align:center;
+}
+
+.property-card:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 
 }
