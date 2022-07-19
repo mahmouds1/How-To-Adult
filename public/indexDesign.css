@@ -41,7 +41,7 @@ body {
 }
 
 .bg {
-    animation: slide 75s ease-in-out infinite alternate;
+    animation: slide 50s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #8A8D91 50%, #E8F1FF 50%);
     bottom: 0;
     left: -50%;
@@ -54,11 +54,11 @@ body {
 
 .bg2 {
     animation-direction: alternate-reverse;
-    animation-duration: 25s;
+    animation-duration: 50s;
 }
 
 .bg3 {
-    animation-duration: 25s;
+    animation-duration: 50s;
 }
 
 .content {
@@ -193,7 +193,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #56f7ff9d;
+    background-color: #56f7ff;
+    opacity: 1;
     border-bottom: #f5e9b4 ridge 3px;
     font-size: 40px;
     font-family: 'Comfortaa';
