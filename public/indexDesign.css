@@ -1,3 +1,4 @@
+/* #region main*/
 * {
     padding: 10;
     margin: 10;
@@ -12,108 +13,25 @@ main {
     align-items: center;
     margin-top: 100px;
     margin-left: 100px;
+    background-color: #1F2041;
 }
 
-p.information {
-    font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    color: #4B3F72;
-    font-family: 'Quicksand';
-}
-
-h1.Welcome_title {
-    color: #19647E;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Comfortaa';
-
-}
-
-h2.About_Us_title {
-    color: #19647E;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Comfortaa';
-
-}
 
 h1.title_hta {
     text-align: center;
-    font-size: 70px;
+    font-size: 40px;
     font-family: 'Comfortaa';
     text-decoration: none;
     color: #19647E;
+    float: left !important;
+    margin: 10px;
     
 
 }
+/* #endregion main*/
 
-/*nav bar properties*/
-/* TODO: Move buttons of nav bar to center 
-and shrink nav bar so its only around the buttons */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border-width: 2px;
-    border: 5px solid black;
-}
+/* #region background img*/
 
-li {
-    float: left;
-}
-
-li a, .dropdownBtn {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-right: 5px solid black;
-}
-
-li a:hover, .dropdown:hover .dropdownBtn {
-    background-color: #119DA4;
-}
-
-/* Drop-downs for nav bar */
-
-li.dropdown {
-    display: inline-block;
-}
-
-.wrapper {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #119DA4
-}
-
-.dropdown:hover .wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-/* body {
-    background-color: #8A8D91;
-} */
-
-/*background img*/
 html {
     height: 100%;
 }
@@ -123,7 +41,7 @@ body {
 }
 
 .bg {
-    animation: slide 3s ease-in-out infinite alternate;
+    animation: slide 50s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #8A8D91 50%, #E8F1FF 50%);
     bottom: 0;
     left: -50%;
@@ -136,11 +54,11 @@ body {
 
 .bg2 {
     animation-direction: alternate-reverse;
-    animation-duration: 4s;
+    animation-duration: 50s;
 }
 
 .bg3 {
-    animation-duration: 5s;
+    animation-duration: 50s;
 }
 
 .content {
@@ -170,18 +88,204 @@ h1 {
     }
 }
 
+/* #endregion background img*/
 
-/*footer properties*/
-footer {
-    background-color: #29293a;
-    color: white;
-    padding: 1em 0;
+/* bkgd 2 */
+/* 
+    body{
+        background: #ffffff;
+    }
+
+
+    .circle{
+        position: absolute;
+        border-radius: 50%;
+        background: #b3b5b8;
+        animation: ripple 15s infinite;
+        box-shadow: 0px 0px 1px 0px #ffffff;
+    }
+
+    .small{
+        width: 200px;
+        height: 200px;
+        left: -100px;
+        right: 100px;
+        bottom: -100px;
+        z-index: -1;
+    }
+
+    .medium{
+        width: 400px;
+        height: 400px;
+        left: -200px;
+        right: 500px;
+        bottom: -200px;
+        z-index: -1;
+    }
+
+    .large{
+        width: 600px;
+        height: 600px;
+        left: -300px;
+        right: 500px;
+        bottom: -300px;
+        z-index: -1;
+    }
+
+    .xlarge{
+        width: 800px;
+        height: 800px;
+        left: -400px;
+        right: 500px;
+        bottom: -400px;
+        z-index: -1;
+    }
+
+    .xxlarge{
+        width: 1000px;
+        height: 1000px;
+        left: -500px;
+        right: 500px;
+        bottom: -500px;
+        z-index: -1;
+    }
+
+    .shade1{
+        opacity: 0.2;
+    }
+
+    .shade2{
+        opacity: 0.3;
+    }
+
+    .shade3{
+        opacity: 0.4;
+    }
+
+    .shade4{
+        opacity: 0.5;
+    }
+
+    .shade5{
+        opacity: 0.6;
+    }
+
+@keyframes ripple{
+    0%{
+        transform: scale(0.8);
+    }
+    
+    50%{
+        transform: scale(1.2);
+    }
+    
+    100%{
+        transform: scale(0.8);
+    }
+} */
+
+/* end bkgd 2 */
+
+
+/* #region nav bar properties*/
+ul {
+    list-style-type: none;
     margin: 0;
-
+    padding: 0;
+    overflow: hidden;
+    background-color: #56f7ff;
+    opacity: 1;
+    border-bottom: #f5e9b4 ridge 3px;
+    font-size: 40px;
+    font-family: 'Comfortaa';
 }
-footer a:link,
-footer a:visited {
-    color: #ec8295;
+
+li {
+    float: right;
+}
+
+li a, .dropdownBtn {
+    display: inline-block;
+    color: #19647E;
+    text-align: center;
+    padding: 10px 16px;
     text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropdownBtn {
+    background-color: #119DA4;
+    clip-path: polygon(0% 0%, 0% 100%, 95% 100%, 100% 50%, 95% 0%);
+}
+
+
+/* Drop-downs for nav bar */
+li.dropdown {
+    display: inline-block;
+}
+
+.navLabel{
+    font-size: 30px;
+    font-family: 'Quicksand';
+    padding-left: 8px;
+    padding-right: 3px;
+    padding-bottom: 15px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.wrapper {
+    display: none;
+    position: absolute;
+    background-color: #f5e9b4;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0.25em;
+    border: solid 2px #119DA4;
+}
+
+.dropdown-content a {
+    color: black;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #119DA4
+}
+
+.dropdown:hover .wrapper {
+    display: flex;
+    justify-content: center;
+}
+/* #endregion nav bar properties*/
+
+/* #region home content*/
+p.information {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #4B3F72;
+    font-family: 'Quicksand';
+}
+
+h1.Welcome_title {
+    color: #19647E;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Comfortaa';
 
 }
+
+h2.About_Us_title {
+    color: #19647E;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+}
+
+/* #endregion home content*/
