@@ -1,9 +1,4 @@
 /* #region main*/
-* {
-    padding: 10;
-    margin: 10;
-}
-
 main {
     width: 100vw;
     height: 100vh;
@@ -89,103 +84,6 @@ h1 {
 }
 
 /* #endregion background img*/
-
-/* bkgd 2 */
-/* 
-    body{
-        background: #ffffff;
-    }
-
-
-    .circle{
-        position: absolute;
-        border-radius: 50%;
-        background: #b3b5b8;
-        animation: ripple 15s infinite;
-        box-shadow: 0px 0px 1px 0px #ffffff;
-    }
-
-    .small{
-        width: 200px;
-        height: 200px;
-        left: -100px;
-        right: 100px;
-        bottom: -100px;
-        z-index: -1;
-    }
-
-    .medium{
-        width: 400px;
-        height: 400px;
-        left: -200px;
-        right: 500px;
-        bottom: -200px;
-        z-index: -1;
-    }
-
-    .large{
-        width: 600px;
-        height: 600px;
-        left: -300px;
-        right: 500px;
-        bottom: -300px;
-        z-index: -1;
-    }
-
-    .xlarge{
-        width: 800px;
-        height: 800px;
-        left: -400px;
-        right: 500px;
-        bottom: -400px;
-        z-index: -1;
-    }
-
-    .xxlarge{
-        width: 1000px;
-        height: 1000px;
-        left: -500px;
-        right: 500px;
-        bottom: -500px;
-        z-index: -1;
-    }
-
-    .shade1{
-        opacity: 0.2;
-    }
-
-    .shade2{
-        opacity: 0.3;
-    }
-
-    .shade3{
-        opacity: 0.4;
-    }
-
-    .shade4{
-        opacity: 0.5;
-    }
-
-    .shade5{
-        opacity: 0.6;
-    }
-
-@keyframes ripple{
-    0%{
-        transform: scale(0.8);
-    }
-    
-    50%{
-        transform: scale(1.2);
-    }
-    
-    100%{
-        transform: scale(0.8);
-    }
-} */
-
-/* end bkgd 2 */
-
 
 /* #region nav bar properties*/
 ul {

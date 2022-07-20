@@ -14,11 +14,12 @@ main {
 
 h1.title_hta {
     text-align: center;
-    font-size: 70px;
-    color: #19647E;
+    font-size: 40px;
     font-family: 'Comfortaa';
     text-decoration: none;
-
+    color: #19647E;
+    float: left !important;
+    margin: 10px;
 
 }
 
@@ -131,7 +132,7 @@ li.dropdown {
 
 .navLabel {
     font-size: 30px;
-    /*font-family: 'Quicksand';*/
+    font-family: 'Quicksand';
     padding-left: 8px;
     padding-right: 3px;
     padding-bottom: 15px;
@@ -152,7 +153,7 @@ li.dropdown {
 
 .dropdown-content a {
     color: black;
-    /*font-family: 'Quicksand';*/
+    font-family: 'Quicksand';
     font-size: 20px;
     padding: 12px 16px;
     text-decoration: none;
@@ -169,7 +170,7 @@ li.dropdown {
     justify-content: center;
 }
 
-/* #endregion nav bar properties */
+/* #endregion nav bar properties*/
 
 /* #region resources grid layout */
 

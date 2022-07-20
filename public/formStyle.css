@@ -1,9 +1,4 @@
 /* #region main*/
-* {
-  padding: 10;
-  margin: 10;
-}
-
 main {
   width: 100vw;
   height: 100vh;
@@ -32,15 +27,13 @@ h1.title_hta {
 /* #endregion main*/
 
 /* #region background img*/
-body {
-  margin: 0;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      color: #000000;
-}
 
 html {
   height: 100%;
+}
+
+body {
+  margin: 0;
 }
 
 .bg {
@@ -65,7 +58,7 @@ html {
 }
 
 .content {
-  background-color: #ffffffcc;
+  background-color: rgba(255, 255, 255, .8);
   border-radius: .25em;
   box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
   box-sizing: border-box;
@@ -83,11 +76,11 @@ h1 {
 
 @keyframes slide {
   0% {
-      transform: translateX(-25%);
+    transform: translateX(-25%);
   }
 
   100% {
-      transform: translateX(25%);
+    transform: translateX(25%);
   }
 }
 
@@ -175,16 +168,6 @@ li.dropdown {
 
 /* #region form properties 3D */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
-
-/*body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #c4c3ca;
-  background-color: #aaaed1;
-  overflow-x: hidden;
-}*/
 
 /* #region slider titles*/
 h4 {
