@@ -1,8 +1,4 @@
-* {
-    padding: 10;
-    margin: 10;
-}
-
+/* #region main with titles */
 main {
     width: 100vw;
     height: 100vh;
@@ -20,18 +16,20 @@ h1.title_hta {
     color: #19647E;
     font-family: 'Comfortaa';
     text-decoration: none;
-    
+
 
 }
 
-h1.cat_title{
+h1.cat_title {
     color: #19647E;
     font-family: "Comfortaa";
-    
+
 
 }
 
-/* #region nav bar properties*/
+/* #endregion main with titles */
+
+/* #region nav bar properties */
 ul {
     list-style-type: none;
     margin: 0;
@@ -44,7 +42,8 @@ li {
     float: left;
 }
 
-li a, .dropdownBtn {
+li a,
+.dropdownBtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -52,7 +51,8 @@ li a, .dropdownBtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropdownBtn {
+li a:hover,
+.dropdown:hover .dropdownBtn {
     background-color: #119DA4;
 }
 
@@ -86,30 +86,7 @@ li.dropdown {
     justify-content: center;
 }
 
-/* #endregion */
-
-
-/*resources grid layout*/
-.grid-container {
-    display: grid;
-    gap: 50px;
-    margin: 10px; 
-    grid-template-columns: auto auto auto;
-    align-content: space-evenly;
-    padding: 50px;
-}
-
-.grid-item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-size: 30px;
-    text-align: center;
-}
-
-h4 {
-    text-align: justify center;
-    text-overflow: wrap;
-}
-
+/* #endregion nav bar properties */
 
 /* #region background img*/
 html {
@@ -168,58 +145,65 @@ h1 {
     }
 }
 
-/*footer properties*/
-footer {
-    background-color: #29293a;
-    color: white;
-    padding: 1em 0;
-    margin: 0;
+/* #endregion background img */
 
+/* #region resources grid layout */
+
+.grid-container {
+    display: grid;
+    gap: 50px;
+    margin: 10px;
+    grid-template-columns: auto auto auto;
+    align-content: space-evenly;
+    padding: 50px;
 }
-footer a:link,
-footer a:visited {
-    color: #ec8295;
-    text-decoration: none;
 
-} /* #endregion */
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+}
 
-/* Card Interaction */
+h4 {
+    text-align: justify center;
+    text-overflow: wrap;
+}
+
+/* #endregion resources grid layout */
+
+/* #region Card Interaction */
 /* For Image Part */
 * {
     box-sizing: border-box;
 }
 
-
-/* End Non-Essential  */
-
 .property-card {
-    display:center;
-    position:relative;
-    border-radius:16px;
-    overflow:hidden;
+    display: center;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 /* Top Half of card, image. */
-
 .property-image {
-    height:9em;
-    padding:1em 2em;
-    top:0px;
-    background-image:url('./../resources/placeholder-video2.png');
-    background-size:cover;
-    background-repeat:no-repeat;
+    height: 9em;
+    padding: 1em 2em;
+    top: 0px;
+    background-image: url('./../resources/placeholder-video2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Bottom Card Section */
-
-.property-description
-{
+.property-description {
     background-color: #FFC857;
     padding: 1em 1em;
-    text-align:center;
+    text-align: center;
 }
 
 .property-card:hover {
     box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 
 }
+
+/* #endregion Card Interaction */
