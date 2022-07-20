@@ -10,38 +10,36 @@
 </head>
 
 <body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
 
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
-        
-        
-        <header>
-            <a href="./../index.html">
-                <h1 class='title_hta'>HOW TO ADULT</h1>
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
-            </a>
-
+    <header>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
         <nav id="topBar">
             <ul>
+                <a href="./../index.html">
+                    <h1 class='title_hta'>HOW TO ADULT</h1>
+                </a>
                 <li><a href="./../form.html">Forms</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Categories</a>
                     <div class="wrapper">
                         <div class="dropdown-content">
-                            <label>Home</label>
+                            <label class="navLabel">Home</label>
                             <a href="./../home-categories/homeRepair.html">Repair</a>
                             <a href="./../home-categories/homeCleaning.html">Cleaning</a>
                             <a href="./../home-categories/homeGadgets.html">Gadgets</a>
                         </div>
                         <div class="dropdown-content">
-                            <label>Personal</label>
+                            <label class="navLabel">Personal</label>
                             <a href="./personalGrowth.html">Growth</a>
                             <a href="./personalCooking.html">Cooking</a>
                             <a href="./personalTravel.html">Travel</a>
                         </div>
                     </div>
                 </li>
+                <li><a href="./../index.html"> Home</a></li>
             </ul>
         </nav>
     </header>
@@ -173,9 +171,9 @@
             for (let i = 1; i <= 9; i++) {
 
                 //db references
-                const titleRef = ref(db, 'displyed-resources/titles/' + idCat + idNum);
-                const linkRef = ref(db, 'displyed-resources/links/' + idCat + idNum);
-                const authChRef = ref(db, 'displyed-resources/auth-channels/' + idCat + idNum);
+                const titleRef = ref(db, 'displyed-resources/title/' + idCat + idNum);
+                const linkRef = ref(db, 'displyed-resources/link/' + idCat + idNum);
+                const authChRef = ref(db, 'displyed-resources/auth-channel/' + idCat + idNum);
                 const viewRef = ref(db, 'displyed-resources/views/' + idCat + idNum);
 
                 //func grabs title/link
