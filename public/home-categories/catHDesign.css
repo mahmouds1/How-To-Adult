@@ -184,7 +184,7 @@ li.dropdown {
 }
 
 .grid-item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    /*border: 1px solid;*/
     font-size: 30px;
     text-align: center;
 }
@@ -192,43 +192,32 @@ li.dropdown {
 h4 {
     text-align: justify center;
     text-overflow: wrap;
+    text-decoration: none;
 }
 
+a:link {
+    text-decoration: none;
+}
 /* #endregion resources grid layout */
 
 /* #region Card Interaction */
-/* For Image Part */
-* {
-    box-sizing: border-box;
-}
-
 .property-card {
-    display: center;
-    position: relative;
     border-radius: 16px;
     overflow: hidden;
-}
-
-/* Top Half of card, image. */
-.property-image {
-    height: 9em;
-    padding: 1em 2em;
-    top: 0px;
-    background-image: url('./../resources/placeholder-video2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    line-height: 1;
+    height: 20em;
 }
 
 /* Bottom Card Section */
 .property-description {
-    background-color: #FFC857;
-    padding: 1em 1em;
+    background: #FFC857;
+    padding: 0.5em 1em;
     text-align: center;
+    height: inherit;
 }
 
 .property-card:hover {
-    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 #1F2041;
 
 }
-
 /* #endregion Card Interaction */
