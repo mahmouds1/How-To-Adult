@@ -28,6 +28,13 @@ h1.title_hta {
 
 /* #region background img*/
 
+body {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #000000;
+}
+
 html {
   height: 100%;
 }
@@ -173,8 +180,8 @@ li.dropdown {
 h4 {
   font-weight: 600;
   font-size: larger;
-  margin: 5px;
-  padding: 5px 10px 5px 20px;
+  margin: 5px 5px 10px 5px;
+  padding: 5px 10px 20px 10px;
   color: #b9b9b9;
   
 }
