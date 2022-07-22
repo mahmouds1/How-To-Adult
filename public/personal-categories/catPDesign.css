@@ -24,7 +24,7 @@ h1.title_hta {
 }
 
 h1.cat_title {
-    color: #19647E;
+    color: #204620;
     margin: 2%;
     padding: 20px 10px 10px 10px;
     font-family: "Comfortaa";
@@ -214,7 +214,7 @@ a:link {
 
 /* Bottom Card Section */
 .property-description {
-    background: #FFC857;
+    background: #19647E;
     padding: 0.5em 1em;
     text-align: center;
     height: inherit;
@@ -223,6 +223,20 @@ a:link {
 .property-card:hover {
     box-shadow: 0 8px 16px 0 #1F2041;
 
+}
+
+.property-card a,
+.property-card a:visited,
+.property-card a:hover,
+.property-card a:active {
+    color: white;
+    font-family: 'Comfortaa';
+
+}
+
+p {
+    color: #FBD374;
+    font-family: 'Quicksand';
 }
 
 /* #endregion Card Interaction */
