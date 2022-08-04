@@ -167,11 +167,8 @@
                 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
                 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
                 import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js";
-                // TODO: Add SDKs for Firebase products that you want to use
-                // https://firebase.google.com/docs/web/setup#available-libraries
 
                 // Your web app's Firebase configuration
-                // For Firebase JS SDK v7.20.0 and later, measurementId is optional
                 const firebaseConfig = {
                     apiKey: "AIzaSyA_selFhau1MjqN25KPf-sgMgnhH4pguBk",
                     authDomain: "how-to-adultv3.firebaseapp.com",
@@ -205,19 +202,11 @@
                     //confirmation that form was submitted
                     Swal.fire({
                         title: '<h3 id="swal">Thank you for submitting a resource!</h3>',
-                        //icon: 'success',
                         showConfirmButton: false,
                         timer: 3000,
                         width: 600,
                         padding: '3em',
                         color: '#716add',
-                        //background: '#fff url(./imgs/bamboo2.png)',
-                        /**backdrop: `
-                                    rgba(169,169,169,0.2)
-                                    url("./imgs/corgi-thumbs-up.gif")
-                                    top
-                                    no-repeat
-                                    `**/
                     })
 
                     //resets form after one submission
@@ -240,19 +229,11 @@
                         //confirmation that form was submitted
                         Swal.fire({
                             title: '<h3 id="swal">Thank you for submitting a suggestion!</h3>',
-                            //icon: 'success',
                             showConfirmButton: false,
                             timer: 3000,
                             width: 600,
                             padding: '3em',
                             color: '#716add',
-                            //background: '#fff url(./imgs/bamboo2.png)',
-                            /**backdrop: `
-                                        rgba(169,169,169,0.2)
-                                        url("./imgs/corgi-thumbs-up.gif")
-                                        top
-                                        no-repeat
-                                        `**/
                         })
                         
                         //resets form after one submission
