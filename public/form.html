@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +13,24 @@
 
     <body>
 
+        <!--background-->
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
 
+        <!--nav bar-->
         <header>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
             <nav id="topBar">
                 <ul>
+                    <!--logo-->
                     <a href="./index.html">
                         <h1 class='title_hta'>HOW TO ADULT</h1>
                     </a>
+
+                    <!--all other nav bar options-->
                     <li><a href="./form.html">Forms</a></li>
+
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropdownBtn">Categories</a>
                         <div class="wrapper">
@@ -41,21 +48,26 @@
                             </div>
                         </div>
                     </li>
+
                     <li><a href="./index.html"> Home</a></li>
+
                 </ul>
             </nav>
         </header>
 
+        <!--main content on page (forms)-->
         <div class="prettyForm">
 
+            <!--top titles & toggle switch on page-->
             <h6 id = "checkboxOption"><span>I have a resource </span> <span>I have a suggestion</span></h6>
             <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
             <label for="reg-log"></label>
             
+            <!--forms card-->
             <div class="card-3d-wrap">
                 <div class="card-3d-wrapper">
             
-            
+                    <!--forms card - resource input-->
                     <div class="card-front">
                         <div class="center-wrap">
                     
@@ -102,17 +114,17 @@
                                 <br>
                                 <br>
                     
-                            </form>
-                            <!--end of form-group-->
+                            </form> <!--end of form-group-->
+
                             <button id="addRe" class="btn mt-4" style="position:relative; bottom: -20px; font-family: 'Comfortaa';">Submit</button>
-                        </div>
-                        <!--end of centerWrap-->
-                    </div>
-                    <!--end of card-front-->
+
+                        </div><!--end of centerWrap-->
+                    </div><!--end of card-front-->
             
-            
+                    <!--forms card - suggestion input-->
                     <div class="card-back">
                         <div class="center-wrap">
+
                             <h4>Submit a Suggestion!</h4>
                             <form class="form-group" id="suggestionFormInput">
                                 <input type="email" name="emailB" id="emailB" class="form-style" placeholder="Your Email"
@@ -142,28 +154,23 @@
                                 <br>
                                 <br>
 
-                            </form>
-                            <!--end of form-group-->
+                            </form><!--end of form-group-->
 
                             <button style="position:relative; bottom: 10px; font-family: 'Comfortaa';" id="addSugg" class="btn mt-4">Submit</button>
 
-                        </div>
-                        <!--end of center-wrap-->
-                    </div>
-                    <!--end of card-back-->
+                        </div><!--end of center-wrap-->
+                    </div><!--end of card-back-->
                 
-                </div>
-                <!--card-3d-wrapper-->
-            </div>
-            <!--card-3d-wrapper-->
+                </div><!--card-3d-wrapper-->
+            </div><!--card-3d-wrap-->
             
         </div> <!--end of prettyForm-->
 
-
+        <!--database init for forms input-->
         <section id="dbCode">
             <script type="module">
 
-                // Import the functions you need from the SDKs you need
+                /*init firebase app - Import the functions you need from the SDKs you need*/
                 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
                 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
                 import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js";
@@ -243,5 +250,7 @@
 
             </script>
         </section>
+
     </body>
+
 </html>

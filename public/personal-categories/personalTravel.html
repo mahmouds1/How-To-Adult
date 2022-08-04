@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +13,24 @@
     </head>
 
     <body>
+
+        <!--background-->
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
         
+        <!--nav bar-->
         <header>
-            
             <nav id="topBar">
                 <ul>
+                    <!--logo-->
                     <a href="./../index.html">
                         <h1 class='title_hta'>HOW TO ADULT</h1>
                     </a>
+
+                    <!--all other nav bar options-->
                     <li><a href="./../form.html">Forms</a></li>
+
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">Categories</a>
                         <div class="wrapper">
@@ -41,14 +48,15 @@
                             </div>
                         </div>
                     </li>
+
                     <li><a href="./../index.html"> Home</a></li>
                 </ul>
             </nav>
         </header>
 
 
+        <!--main content on page (cards)-->
         <h1 class="cat_title">Personal Travel</h1>
-        
         <div class="grid-container">
         
             <div class="grid-item property-card" id="resource1">
@@ -59,7 +67,6 @@
                     <p id="r1-views">details here pt3</p>
                 </div>
             </div>
-        
         
             <div class="grid-item property-card" id="resource2">
                 <img src="./../resources/placeholder-video.png" alt="thumbnail" style="width: 100%">
@@ -135,11 +142,11 @@
         
         </div>
 
+        <!--database init for displaying resources-->
         <section id="dbCode">
             <script type="module">
 
-                /*init firebase app*/
-                // Import the functions you need from the SDKs you need
+                /*init firebase app - Import the functions you need from the SDKs you need*/
                 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
                 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
                 import { getDatabase, ref, set, get, child, onValue} from "https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js";
@@ -178,14 +185,9 @@
                     //func grabs title/link
                     onValue(titleRef, (snapshot) => {
                          onValue(linkRef, (snapshot2) => {
-                            //used for testing
-                            console.log("title: ", snapshot.val());
-                            console.log("link: ", snapshot2.val());
-
                             //print out link and title
                             document.querySelector('#r' + i + '-titleLink').innerHTML = `<h4><a href="${snapshot2.val()}" target="_blank" rel="noopener noreferrer">${snapshot.val()}</a></h4>`;
                         });
-
                     });
 
                     //func grabs auth
@@ -194,7 +196,6 @@
                         data = snapshot3.val();
                         document.querySelector('#r' + i + '-authCh').innerHTML = `<p>${data}</p>`;
                     }); //end of onValue(authCh)
-
 
                     //func grabs views
                     onValue(viewRef, (snapshot4) => {
